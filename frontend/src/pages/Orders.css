@@ -1,0 +1,173 @@
+/* Orders.css */
+
+.orders-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.orders-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.order-item-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.order-item-image {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.order-item-info {
+  text-align: center;
+}
+
+.order-item-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.order-item-pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.order-item-price {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.order-item-quantity,
+.order-item-size {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.order-item-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.order-item-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.order-shipping-status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.shipping-icon {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.track-order-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.track-order-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .order-item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .order-item-details {
+    flex-direction: row;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .order-item-info {
+    text-align: left;
+  }
+
+  .order-item-status {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .orders-container {
+    padding: 40px;
+  }
+
+  .order-item {
+    padding: 30px;
+  }
+
+  .order-item-name {
+    font-size: 1.4rem;
+  }
+
+  .order-item-price {
+    font-size: 1.3rem;
+  }
+
+  .order-item-quantity,
+  .order-item-size,
+  .order-item-date {
+    font-size: 1rem;
+  }
+
+  .shipping-icon {
+    font-size: 2rem;
+  }
+
+  .track-order-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}

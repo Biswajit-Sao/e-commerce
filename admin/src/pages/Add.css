@@ -1,0 +1,167 @@
+/* General Styles */
+.add-container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Layout */
+.add-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+/* Upload Section */
+.upload-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+}
+
+.upload-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+}
+
+.upload-box:hover {
+    border-color: #007bff;
+    background-color: #e9f5ff;
+}
+
+.upload-icon {
+    font-size: 28px;
+    color: #007bff;
+}
+
+.upload-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.file-input {
+    display: none;
+}
+
+/* Input Fields */
+.text-input,
+.textarea-input,
+.dropdown {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.text-input:focus,
+.textarea-input:focus,
+.dropdown:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.textarea-input {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Category Section */
+.category-section {
+    display: flex;
+    gap: 20px;
+}
+
+.category-section > div {
+    flex: 1;
+}
+
+/* Sizes Section */
+.size-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.size-box {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.size-box:hover,
+.size-box.selected {
+    border-color: #007bff;
+    background-color: #e9f5ff;
+}
+
+/* Checkbox Section */
+.checkbox-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* Submit Button */
+.submit-button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .upload-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .size-options {
+        justify-content: center;
+    }
+}

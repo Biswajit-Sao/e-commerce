@@ -1,0 +1,124 @@
+/* Hero.css */
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.hero-left {
+  flex: 1;
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 400px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.hero-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.hero-cta {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-cta:hover {
+  background-color: #0056b3;
+}
+
+.hero-cta-text {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.hero-right {
+  flex: 1;
+  max-width: 600px;
+}
+
+.mySwiper {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* Swiper Navigation and Pagination Styles */
+.swiper-pagination-bullet {
+  background-color: #007bff;
+  opacity: 0.7;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #0056b3;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .hero-left,
+  .hero-right {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .hero-cta {
+    padding: 0.5rem 1rem;
+  }
+}

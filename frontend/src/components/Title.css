@@ -1,0 +1,24 @@
+/* General styles */
+.title-container {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .title-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .title-highlight {
+    color: #ff6347; /* Highlight color */
+    margin-left: 0.5rem;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .title-text {
+      font-size: 2rem;
+    }
+  }

@@ -1,0 +1,205 @@
+/* Product Page Styling */
+.product-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+/* Product Details */
+.product-details {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Product Image Section */
+.product-image-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-thumbnails {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.thumbnail:hover,
+.active-thumbnail {
+  border: 2px solid #ff6600;
+  transform: scale(1.1);
+}
+
+.product-main-image img {
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Info Section */
+.product-info {
+  flex: 1;
+}
+
+.product-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+
+.star-icon {
+  font-size: 18px;
+}
+
+.rating-count {
+  font-size: 14px;
+  color: #666;
+}
+
+.product-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff4500;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Size Selection */
+.size-selection {
+  margin-bottom: 20px;
+}
+
+.size-label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.size-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.size-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ff6600;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.size-button:hover,
+.active-size {
+  background: #ff6600;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Add to Cart Button */
+.add-to-cart-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #ff4500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.add-to-cart-button:hover {
+  background: #d83b00;
+  transform: scale(1.05);
+}
+
+/* Divider */
+.divider {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* Product Policies */
+.product-policies {
+  font-size: 14px;
+  color: #555;
+}
+
+.product-policies p {
+  margin: 5px 0;
+}
+
+/* Description & Review Section */
+.description-review-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description-content p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-main-image img {
+    width: 300px;
+  }
+
+  .size-buttons {
+    flex-wrap: wrap;
+  }
+
+  .add-to-cart-button {
+    font-size: 16px;
+  }
+}

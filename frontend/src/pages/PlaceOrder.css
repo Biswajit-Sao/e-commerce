@@ -1,0 +1,143 @@
+/* PlaceOrder.css */
+
+.place-order-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .delivery-info-section,
+  .payment-section {
+    width: 48%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .delivery-info-section input,
+  .payment-section input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .delivery-info-section input:focus,
+  .payment-section input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .name-fields,
+  .city-state-fields,
+  .zip-country-fields {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .name-fields input,
+  .city-state-fields input,
+  .zip-country-fields input {
+    width: 48%;
+  }
+  
+  .payment-method {
+    margin-top: 20px;
+  }
+  
+  .payment-method-option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .payment-method-option:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .payment-method-option.active {
+    border-color: #007bff;
+    background-color: #e3f2fd;
+  }
+  
+  .payment-method-option svg {
+    margin-right: 10px;
+    font-size: 24px;
+  }
+  
+  .place-order-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .place-order-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .place-order-container {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .delivery-info-section,
+    .payment-section {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .name-fields,
+    .city-state-fields,
+    .zip-country-fields {
+      flex-direction: column;
+    }
+  
+    .name-fields input,
+    .city-state-fields input,
+    .zip-country-fields input {
+      width: 100%;
+    }
+  
+    .payment-method-option {
+      font-size: 14px;
+    }
+  
+    .place-order-button {
+      font-size: 16px;
+      padding: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .delivery-info-section,
+    .payment-section {
+      padding: 15px;
+    }
+  
+    .payment-method-option {
+      padding: 8px;
+    }
+  
+    .place-order-button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }

@@ -28,9 +28,8 @@ Live Admin Dashboard: [https://astounding-fox-f1da14.netlify.app/](https://astou
 
 ### 💻 Frontend
 - React.js
-- Redux Toolkit
 - React Router
-- Tailwind CSS
+- CSS
 
 ### 🌐 Backend
 - Node.js

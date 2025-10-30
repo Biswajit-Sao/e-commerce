@@ -4,7 +4,7 @@ Live User Site: [https://e-commerce-bs.netlify.app/](https://e-commerce-bs.netli
 Live Admin Dashboard: [https://astounding-fox-f1da14.netlify.app/](https://astounding-fox-f1da14.netlify.app/)
 
 ## 🧑‍💼 Admin Login Credentials
-- **Email:** biswajit@admin.com  
+- **Email:** admin@gmail.com
 - **Password:** admin@123
 
 ---
